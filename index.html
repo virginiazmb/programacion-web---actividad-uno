@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro de empleados</title>
+    
+</head>
+<body>
+    
+    <h2 style="font-family: Gill Sans MT; margin-top: 4%; margin-left: 2%;">Ingrese datos del empleado</h2>
+
+    <form method="post" action="index.php">
+
+        <label for="nombreID" style="margin-left: 2%;font-size: 18px; font-weight: 500; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Nombre:</label>
+        <input type="text" name="nombre" style="margin-top: 2%; margin-left: 0.5%;"><br>
+        
+        <label for="apellidoID" style="margin-left: 2%; font-size: 18px; font-weight: 500; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Apellido:</label> 
+        <input type="text" name="apellido" style="margin-top: 2%; margin-left: 0.5%;"><br>
+
+        <label for="edadID" style="margin-left: 2%; font-size: 18px; font-weight: 500; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Edad:</label> 
+        <input type="number" name="edad" value="edad" style="margin-top: 2%; margin-left: 0.5%;" min="20" max="65" required><br>
+
+        <label for="gen" style="margin-left: 2%; font-size: 18px; font-weight: 500; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Genero: </label>
+
+            <input type="radio" name= "gen" style="margin-top: 2%; margin-left: 0.5%;" value= "Masculino">
+            <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13.5px;">Masculino</label> <br>
+
+            <input type="radio" name= "gen" style="margin-left: 7.8%; margin-top: 0.5%;;" value= "Femenino">
+            <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13.5px;">Femenino</label> <br><br>
+
+        <label for="civil" style="margin-left: 2%; font-size: 18px; font-weight: 500; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Estado Civil: </label>
+
+            <input type="checkbox" id="soltero" name="civil" style="margin-left: 1%;" value= "Soltero(a)">
+            <label for="soltero" 
+            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13.5px;">Soltero(a)</label> <br>
+
+            <input type="checkbox" id="casado" name="civil" 
+            style="margin-left: 10.8%; margin-top: 0.5%;" value="Casado(a)">
+            <label for="Casado" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13.5px;">Casado(a)</label> <br>
+
+            <input type="checkbox" id="viudo" name="civil" 
+            style="margin-left: 10.8%; margin-top: 0.5%;" value= "Viudo(a)">
+            <label for="viudo" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13.5px;">Viudo(a)</label> <br><br>
+
+        <label for="sueldo" 
+        style="margin-left: 2%; font-size: 18px; font-weight: 500; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sueldo:</label>
+        <select name="sueldo">
+        <option value="menos de 1000">menos de 1000</option>
+        <option value="entre 1000 y 2500">entre 1000 y 2500</option>
+        <option value="mas de 2500">mas de 2500</option>
+        </select> <br> <br> <br>
+
+        <button type = "submit"  name= "btn"onclick ="alert('Empleado registrado exitosamente!')" 
+        style="margin-left:4%; margin-right: 2%; background-color: rgb(108, 115, 156); color: white; border-radius: 15px; padding: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600; border: rgb(27, 47, 81);" > Registrar </button> 
+        
+        <button type = "" 
+        style="background-color: rgb(108, 115, 156); color: white; border-radius: 15px; padding: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600; border: rgb(27, 47, 81);" >
+        <a href="./index.html" style="text-decoration: none; color: white;">Ingresar otro registro</a>
+        </button>
+    </form>
+    
+</body>
+</html>
+
